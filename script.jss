@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const targetId = this.getAttribute("href").substring(1);
             const targetElement = document.getElementById(targetId);
             if (targetElement) {
-                window.scrollTo({ top: targetElement.offsetTop, behavior: "smooth" });
+                window.scrollTo({ inset-block-start: targetElement.offsetTop, behavior: "smooth" });
             }
         });
     });
